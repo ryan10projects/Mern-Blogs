@@ -15,7 +15,7 @@ app.use((req, res, next) => {
 })
 
 // routes
-app.use('/', routes)
+app.use('/api/blogs', routes)
 
 if(process.env.NODE_ENV === 'production') {
   app.use(express.static('frontend/build'))
